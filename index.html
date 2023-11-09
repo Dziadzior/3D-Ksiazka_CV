@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="design.css" />
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>3D Książka-CV</title>
+  </head>
+  <body>
+    <div class="blok">
+      <div class="strona strona-lewa"></div>
+      <div class="strona strona-prawa przerzuc"></div>
+
+      <div class="ksiazka">
+        <!-- Strona profilowa -->
+        <div class="ksiazka-kartka kartka-lewa">
+          <div class="strona-profilowa">
+            <img src="Obrazy/ja.png" alt="" />
+            <h1>Patryk Roszkowski</h1>
+            <h3>FrontEnd/AdminIT</h3>
+
+            <div class="socialki">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-regular fa-images"></i></a>
+            </div>
+
+            <p>
+              Cześć, Jestem Patryk Roszkowski, zajmuję się<span class="czcionka"
+                >FrontEnd-em</span
+              ><span class="znaczek"> & </span><span class="czcionka">IT.</span>
+            </p>
+            <br />
+            <p>
+              Jestem tzw."samoukiem", chociaż jestem po Technikum
+              Informatycznym.<br />Zapraszam Ciebie do zapoznania się z moją
+              osobą :)
+            </p>
+
+            <div class="przycisk-box">
+              <a href="#" class="przycisk">Pobierz CV</a>
+              <a href="#" class="przycisk kontakt-ja">Skontaktuj się!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ksiazka-kartka kartka-prawa przerzuc" id="przerzuc-1">
+          <!-- strona 1 (doświadczenie zawodowe) -->
+          <div class="kartka-przod">
+            <h1 class="tytul">Doświadczenie zawodowe</h1>
+
+            <div class="doszaw-box">
+              <div class="doszaw-opis">
+                <span class="rok"
+                  ><i class="fa-regular fa-calendar-days"></i>2023 -
+                  Obecnie</span
+                >
+                <h3>Administrator IT</h3>
+                <h4>Asstra Polska Sp. z o.o, Warszawa</h4>
+                <p>
+                  • 1 linia HelpDesk<br />
+                  • Pomoc stacjonarna pracownikom w biurze<br />
+                  • Pomoc techniczna sprzętu IT<br />
+                  • Konfiguracja nowych urządzeń
+                </p>
+              </div>
+            </div>
+            <div class="doszaw-box">
+              <div class="doszaw-opis">
+                <span class="rok"
+                  ><i class="fa-regular fa-calendar-days"></i>2022 - 2023</span
+                >
+                <h3>Asystent kierownika</h3>
+                <h4>BIMs Plus Sp. z o.o, Warszawa</h4>
+                <p>
+                  • Uczestniczyłem w inwentaryzacji w Hurtowniach<br />
+                  • Praca na magazynie<br />
+                  • Pomoc przy wdrażaniu nowego projektu logistycznego LMS<br />
+                </p>
+              </div>
+            </div>
+            <div class="doszaw-box">
+              <div class="doszaw-opis">
+                <span class="rok"
+                  ><i class="fa-regular fa-calendar-days"></i>2021 - 2021</span
+                >
+                <h3>Praktykant</h3>
+                <h4>SyloSoftware, Warszawa</h4>
+                <p>
+                  • Uczestniczyłem w projekcie stron internetowych dla SGGW<br />
+                  • Wykonywałem samodzielnie strony internetowe pod okiem
+                  opiekuna
+                </p>
+              </div>
+            </div>
+
+            <span class="numer-strony">1</span>
+
+            <!-- Następna strona - Przycisk -->
+            <span class="nastepna-przycisk" data-page="przerzuc-1">
+              <i class="fa-regular fa-circle-right"></i>
+            </span>
+          </div>
+
+          <!-- strona 2 (edukacja) -->
+          <div class="kartka-tyl">
+            <h1 class="tytul">Edukacja</h1>
+
+            <div class="doszaw-box">
+              <div class="doszaw-opis">
+                <span class="rok"
+                  ><i class="fa-regular fa-calendar-days"></i>2022 - 2023</span
+                >
+                <h3>AS - Liceum Ogólnokształcące dla dorosłych</h3>
+                <p>Uzyskałem wykształcenie średnie.</p>
+              </div>
+            </div>
+
+            <div class="doszaw-box">
+              <div class="doszaw-opis">
+                <span class="rok"
+                  ><i class="fa-regular fa-calendar-days"></i>2016 - 2022</span
+                >
+                <h3>Zespół Szkół Łączności</h3>
+                <p>Uzyskałem certyfikaty EE.08 oraz EE.09.</p>
+              </div>
+            </div>
+
+            <h3 class="edu-opis">Moje wykształcenie: Średnie</h3>
+
+            <h3 class="edu-opis">Certyfikaty: EE.08 i EE.09</h3>
+
+            <h3 class="edu-opis">Tytuł: Technik Informatyk</h3>
+
+            <span class="numer-strony">2</span>
+
+            <!-- Cofnij - Przycisk -->
+            <span class="nastepna-przycisk tyl" data-page="przerzuc-1">
+              <i class="fa-regular fa-circle-left"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Główny JS -->
+    <script src="glowny.js"></script>
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/264a91385a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- IonIcons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
