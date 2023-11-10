@@ -275,3 +275,153 @@ a {
 .edu-opis {
   margin-top: 10%;
 }
+
+/* USŁUGI */
+
+.kartka-przod h1 {
+  margin-top: -10px;
+}
+
+.uslugi-glowny {
+  padding: 1% -1%;
+}
+
+.uslugi-box {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 11px;
+}
+
+.uslugi-opis {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 390px;
+  height: 125px;
+  padding: 1% 1%;
+  background-color: var(--glowny-kolor);
+  border: var(--border);
+  border-radius: 18px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.uslugi-opis::after {
+  content: "";
+  position: absolute;
+  top: 150%;
+  left: -200px;
+  width: 120%;
+  height: 18px;
+  transform: rotate(50deg);
+  background-color: var(--bialy-kolor);
+  filter: blur(30px);
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.uslugi-opis:hover {
+  background-color: transparent;
+  transform: translateY(-5px);
+}
+
+.uslugi-opis:hover::after {
+  width: 225%;
+  top: -100%;
+}
+
+.uslugi-opis i {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: var(--bialy-kolor);
+  font-size: 1.8rem;
+}
+
+.uslugi-opis:hover i {
+  color: var(--glowny-kolor);
+}
+
+.uslugi-opis h3 {
+  color: var(--bialy-kolor);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.uslugi-opis:hover h3 {
+  color: var(--glowny-kolor);
+}
+
+.uslugi-opis p {
+  width: 100%;
+  margin: 3px 0;
+  margin-top: 1px;
+  text-align: center;
+  color: var(--napis1-kolor);
+  font-size: 0.9rem;
+}
+
+/* UMIEJĘTNOŚCI */
+
+.umiejetnosci-box {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.umiejetnosci-nazwa {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--glowny-kolor);
+  text-transform: uppercase;
+}
+
+.umiejtnosci-pasek {
+  height: 14px;
+  background: var(--bialy-kolor);
+  border-radius: 8px;
+}
+
+.umiejetnosci-procenty {
+  position: relative;
+  height: 14px;
+  background-color: var(--glowny-kolor);
+  border-radius: 8px;
+  animation: ladowanie 2.5s 1;
+}
+
+.umiejetnosci-procenty::before {
+  content: attr(per);
+  position: absolute;
+  top: -35px;
+  right: 0;
+  padding: 4px 6px;
+  background-color: var(--bialy-kolor);
+  border-radius: 5px;
+  font-size: 11px;
+  transform: translateX(50%);
+  box-shadow: var(--box-shadow);
+}
+
+.umiejetnosci-procenty::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--bialy-kolor);
+  border-radius: 2px;
+  transform: translateX(50%) rotate(45deg);
+}
+
+@keyframes ladowanie {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
