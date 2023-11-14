@@ -158,6 +158,7 @@ a {
   line-height: 1.2;
   gap: 1px;
   text-align: center;
+  margin-left: 20%;
 }
 
 .strona-profilowa p span.czcionka {
@@ -170,6 +171,8 @@ a {
 
 .strona-profilowa .przycisk-box {
   margin-top: 1.2rem;
+  margin-left: 20%;
+  width: 100%;
 }
 
 .przycisk {
@@ -240,6 +243,7 @@ a {
 }
 
 .doszaw-box {
+  margin-top: 10%;
   border-left: var(--border);
 }
 
