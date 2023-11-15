@@ -95,3 +95,14 @@ kartki.forEach((_, index) => {
       }, 500);
     }, (index + 1) * 200 + 2100);
   });
+
+  // Pojawia sie strona
+  const pPrawa = document.querySelector('.poprawej');
+
+  setTimeout(() => {
+    pPrawa.classList.add('pojawiasie');
+}, 3200)
+
+setTimeout(() => {
+    pPrawa.style.zIndex = -2;
+}, 3200)
