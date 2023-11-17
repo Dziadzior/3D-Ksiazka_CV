@@ -104,5 +104,5 @@ kartki.forEach((_, index) => {
 }, 3200)
 
 setTimeout(() => {
-    pPrawa.style.zIndex = -2;
+    pPrawa.style.zIndex = -1;
 }, 3200)
